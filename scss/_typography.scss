@@ -1,4 +1,130 @@
 /* CSS Document */
+@font-face{
+    src: url(https://mymulti-craft.com/loth/2019-kickoff/fonts/agency.TTF);
+    font-family: Agency;
+}
+
+@font-face{
+    src: url(https://mymulti-craft.com/loth/2019-kickoff/fonts/helveticaneue.otf);
+    font-family: helvetica;
+}
+
+$deetsFace: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+$dubsFace: helvetica, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+
 body{
     font-size:18px;
 }
+
+.header-row{
+    
+        text-align: center;
+        h1{
+            font-size: 4.75em;
+            font-family: $dubsFace;
+            color: $grey;
+        }
+    
+    
+}
+
+.body-row{
+    label{
+        color:$orange;
+        font-size: 2em;
+        font-family: $dubsFace;
+        text-align: right;
+    }
+    
+    .rsvp-input{
+        font-family: $deetsFace;
+        font-size:2em;
+        
+    }
+    
+    ::placeholder{
+        color:$ltgrey;
+    }
+    
+    .instructions, .message{
+        p{
+            color:$orange;
+            font-size: 2em;
+        }
+    }
+    
+    .rsvp-btn{
+        font-size: 2em;
+    }
+
+}
+
+@media screen and (max-width:991px){
+    .header-row{
+        
+            h1{
+                font-size:3.5em;
+            }
+       
+    }
+    
+    
+}
+
+@media screen and (max-width:767px){
+    .body-row{
+        .instructions, .message{
+            p{
+                font-size: 1.5em;
+            }
+        }
+        label{
+            text-align: left;
+            font-size: 1.5em;
+        }
+        .rsvp-btn{
+            font-size: 1.75em;
+        }
+    }
+    
+    .header-row{
+        
+            h1{
+                font-size:3em;
+            }
+        
+    }
+}
+
+@media screen and (max-width:575px){
+    .body-row{
+        .instructions, .message{
+            p{
+                font-size: 1.25em;
+            }
+        }
+        label{
+            text-align: left;
+            font-size: 1.5em;
+        }
+        .rsvp-btn{
+            font-size: 1.25em;
+        }
+    }
+    
+    
+    
+    .header-row{
+        
+            h1{
+                font-size:2em;
+            }
+       
+    }
+    
+    
+    
+}
+
+
+

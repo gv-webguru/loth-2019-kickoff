@@ -1,7 +1,134 @@
 /* CSS Document */
 /* CSS Document */
 /* CSS Document */
+@font-face {
+  src: url(https://mymulti-craft.com/loth/2019-kickoff/fonts/agency.TTF);
+  font-family: Agency; }
+@font-face {
+  src: url(https://mymulti-craft.com/loth/2019-kickoff/fonts/helveticaneue.otf);
+  font-family: helvetica; }
 body {
   font-size: 18px; }
 
+.header-row {
+  text-align: center; }
+  .header-row h1 {
+    font-size: 4.75em;
+    font-family: helvetica, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color: #4c4d4f; }
+
+.body-row label {
+  color: #f8931d;
+  font-size: 2em;
+  font-family: helvetica, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  text-align: right; }
+.body-row .rsvp-input {
+  font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  font-size: 2em; }
+.body-row ::placeholder {
+  color: #bebfc3; }
+.body-row .instructions p, .body-row .message p {
+  color: #f8931d;
+  font-size: 2em; }
+.body-row .rsvp-btn {
+  font-size: 2em; }
+
+@media screen and (max-width: 991px) {
+  .header-row h1 {
+    font-size: 3.5em; } }
+@media screen and (max-width: 767px) {
+  .body-row .instructions p, .body-row .message p {
+    font-size: 1.5em; }
+  .body-row label {
+    text-align: left;
+    font-size: 1.5em; }
+  .body-row .rsvp-btn {
+    font-size: 1.75em; }
+
+  .header-row h1 {
+    font-size: 3em; } }
+@media screen and (max-width: 575px) {
+  .body-row .instructions p, .body-row .message p {
+    font-size: 1.25em; }
+  .body-row label {
+    text-align: left;
+    font-size: 1.5em; }
+  .body-row .rsvp-btn {
+    font-size: 1.25em; }
+
+  .header-row h1 {
+    font-size: 2em; } }
 /* CSS Document */
+.header-row {
+  background-image: url(https://mymulti-craft.com/loth/2019-kickoff/images/headerBg.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover; }
+  .header-row .col-sm-12 {
+    margin: 0;
+    padding: 50px 0;
+    text-align: center; }
+
+.body-row {
+  background-color: #4c4d4f;
+  background-image: url(https://mymulti-craft.com/loth/2019-kickoff/images/db-bg-blurred.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 25px; }
+  .body-row .instructions, .body-row .message {
+    width: 80%;
+    margin: 0 auto; }
+  .body-row .message {
+    min-height: 300px; }
+
+.form-wrapper {
+  width: 80%;
+  margin: 0 auto 25px; }
+  .form-wrapper .form-group {
+    display: flex;
+    align-items: center; }
+  .form-wrapper input {
+    background-color: #4c4d4f;
+    color: #bebfc3;
+    border: 0; }
+
+.rsvp-row {
+  display: flex;
+  align-items: stretch; }
+
+.rsvp-btn {
+  padding: 16px;
+  box-shadow: 0px -15px 30px rgba(0, 0, 0, 0.15) inset;
+  margin: 32px auto; }
+
+.rsvp-btn:hover {
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15) inset; }
+
+.rsvp-btn#yes {
+  background-color: #f8931d; }
+
+.rsvp-btn#no {
+  background-color: #bebfc3; }
+
+.footer-row .col-sm-12 {
+  margin: 0;
+  padding: 0; }
+  .footer-row .col-sm-12 .footer-wrapper {
+    margin: -30px auto 0;
+    width: 100%; }
+    .footer-row .col-sm-12 .footer-wrapper .footer-img {
+      width: 100%; }
+
+.logo-wrapper {
+  width: 43.3%;
+  max-width: 520px;
+  margin: 0 auto; }
+  .logo-wrapper img {
+    width: 100%; }
+
+@media screen and (max-width: 991px) {
+  .logo-wrapper {
+    margin-bottom: 24px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,10 +1,76 @@
 <!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
-</head>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body>
-</body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="https://mymulti-craft.com/loth/2019-kickoff/css/style.css">  
+
+    <title>2019 Kick-Off | Loth, Inc.</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row header-row">
+            <div class="col-sm-12">
+                <div class="logo-wrapper"><img class="loth-logo" src="https://mymulti-craft.com/loth/2019-kickoff/images/loth-logo-web.png" alt="LOTH"></div>
+                <h1>2019 KICK-OFF!</h1>
+            </div>
+        </div>
+        <div class="row body-row">
+            <div class="instructions"><p>Please fill in the fields below and let us know if you will be attending the Kick-Off.</p></div>
+            <div class="form-wrapper">
+                <form method="post" action="" id="rsvp-form">
+                    <div class="form-group row">
+                        <label for="firstname" class="col-sm-12 col-lg-4 col-form-label">first name: </label>
+                        <div class="col-sm-12 col-lg-8">
+                          <input type="text" class="form-control form-control-lg rsvp-input" id="firstname" name="firstname" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastname" class="col-sm-12 col-lg-4 col-form-label">last name: </label>
+                        <div class="col-sm-12 col-lg-8">
+                          <input type="text" class="form-control form-control-lg rsvp-input" id="lastname" name="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-12 col-lg-4 col-form-label">email: </label>
+                        <div class="col-sm-12 col-lg-8">
+                          <input type="text" class="form-control form-control-lg rsvp-input" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                                <label for="dept" class="col-sm-12 col-lg-4 col-form-label">department: </label>
+                                <div class="col-sm-12 col-lg-8">
+                                  <input type="text" class="form-control form-control-lg rsvp-input" id="dept" name="department" placeholder="Department">
+                                </div>
+                    </div>
+                    <div class="row rsvp-row">
+                        <div class="col-md-6"><div class="btn-wrapper"><a class="btn btn-block rsvp-btn" id="yes">I will be there.</a></div></div>
+                        <div class="col-md-6"><div class="btn-wrapper"><a class="btn btn-block rsvp-btn" id="no">I will not be there.</a></div></div>
+                    </div>
+                    <input type="hidden" name="AttendingKickoff" id="kickoffRSVP">
+                    
+                </form>
+            </div>
+        </div>
+        <div class="row footer-row">
+            <div class="col-sm-12">
+                <div class="footer-wrapper">
+                    <img class="footer-img" src="https://mymulti-craft.com/loth/2019-kickoff/images/lp-footer.png" alt="Dave & Buster's - Eat, Play, Fun, Repeat">
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+     <!-- <script src="js/scripts.js"></script>-->
+      <script src="https://mymulti-craft.com/loth/2019-kickoff/js/scripts.js"></script>
+  </body>
 </html>

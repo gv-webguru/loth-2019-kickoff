@@ -1,2 +1,114 @@
 /* CSS Document */
 
+.header-row{
+    background-image:url(https://mymulti-craft.com/loth/2019-kickoff/images/headerBg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    .col-sm-12{
+        margin:0;
+        padding:50px 0;
+        text-align: center;
+    }
+}
+
+.body-row{
+    background-color: $grey;
+    background-image: url(https://mymulti-craft.com/loth/2019-kickoff/images/db-bg-blurred.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding:25px;
+    .instructions, .message{
+        width:80%;
+        margin:0 auto;
+    }
+    .message{
+        min-height:300px;
+    }
+    
+}
+
+.form-wrapper{
+    width:80%;
+    margin:0 auto 25px;
+    
+    .form-group{
+        display:flex;
+        align-items: center;
+    }
+    
+    input{
+        background-color:$grey;
+        color:$ltgrey;
+        border:0;
+    }
+   
+    
+}
+
+.rsvp-row{
+    display: flex;
+    align-items: stretch;
+}
+
+.rsvp-btn{
+    padding:16px;
+    box-shadow:0px -15px 30px rgba(0,0,0,.15) inset;
+    margin:32px auto;
+}
+
+.rsvp-btn:hover{
+    box-shadow:0px 15px 30px rgba(0,0,0,.15) inset;
+}
+
+.rsvp-btn#yes{
+    background-color:$orange;
+}
+.rsvp-btn#no{
+    background-color:$ltgrey;
+}
+
+.footer-row{
+    
+    .col-sm-12{
+        margin:0;
+        padding:0;
+    
+        .footer-wrapper{
+            margin:-30px auto 0;
+            width:100%;
+            .footer-img{
+                width:100%;
+            }
+        }
+    }
+}
+
+.logo-wrapper{
+    width:43.3%;
+    max-width:520px;
+    margin:0 auto;
+    
+    img{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:991px){
+    .logo-wrapper{
+        margin-bottom:24px;
+    }
+}
+
+@media screen and (max-width:767px){
+    
+}
+
+@media screen and (max-width:575px){
+    
+}
+
+
+
