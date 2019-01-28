@@ -1386,6 +1386,10 @@ table.copy-wrapper td.dubs{
     vertical-align: text-top;
 }
 
+table.copy-wrapper td.dubs.ty-dubs{
+    text-align: left;
+}
+
 table.copy-wrapper td.deets{
     color:#bebfc3;
     border-left:2px solid #f8931d;

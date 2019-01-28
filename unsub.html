@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+      
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <!-- Compressed CSS -->
+     
+    <link rel="stylesheet" href="https://mymulti-craft.com/strength/css/styles.css">
+      <!--<link rel="stylesheet" href="css/styles.css">-->
+    <title>Strong Legacy &bull; Bright Future | LOTH</title>
+    <style>
+        #banner-wrapper{
+            color: #fff;
+            background:#000;
+            font-size: .75rem;
+            padding: 16px;
+        }
+        .gv-copy{
+            font-family:Helvetica Neue, Arial, sans-serif;
+            font-size:1.25em;
+        }
+        
+        .banner-headline{
+            font-family:Helvetica Neue, Arial, sans-serif;
+        }
+        
+        .small{
+            font-size:.9rem;
+        }
+        
+        h2.gv-copy{
+            font-size:2rem;
+            font-weight: bold;
+        }
+        label#chklabel{
+            margin-left:1.5rem;
+        }
+        .form-check{
+            margin-bottom:1.5em;
+        }
+        #unsubme{
+            margin-bottom: 1.5em;
+        }
+        #footer-row{
+            font-size: .85em;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row" id="header-row">
+            <div class="col" id="banner-wrapper">
+                <a href="https://lothinc.com" target="_blank"><img src="https://mymulti-craft.com/loth/2019-kickoff/images/unsub-logo.png" alt="LOTH"></a><span class="banner-headline">&nbsp;&nbsp;&nbsp;&nbsp;STRONG LEGACY &bull; BRIGHT FUTURE</span>
+            </div>
+        </div>
+        <div class="row" id="body-row">
+            <div class="col">
+                <form action="" id="unsub-form" method="post" name="unsubscribeme">
+                    <p class="gv-copy small">Need help? Feel free to <a href="mailto:info@lothinc.com" target="_blank">contact us</a> at any time.</p>
+                    <h2 class="gv-copy">Subscriptions</h2>
+                    <p class="gv-copy">Dear ##firstname##,<br>If you&#39;d like to unsubscribe, mark the checkbox below and click the &quot;Update Subscription&quot; button.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" id="chkStrength" name="chkStrength" style="cursor:pointer;margin-top:.5em" type="checkbox" />
+                        <label class="form-check-label" for="chkStrength" id="chklabel">
+                            <span class="gv-copy">LOTH's 2019 Kick-Off Event</span>
+                            <br><span class="gv-copy" id="u-sure" style="font-size:.8em; display: none; color:red;"><em>Are you sure you want to leave this page without unsubscribing?</em></span>
+                        </label>
+                    </div>
+                    <input class="btn btn-outline-dark btn-lg" id="unsubme" style="padding:5px 10px;" type="submit" value="Update Subscription" />
+                    <p class="gv-copy small">We welcome your ideas on how we can better serve you.<br>Please reach us at <a href="mailto:info@lothinc.com">info@lothinc.com</a></p>
+                    <input id="Do_Not_Email" name="Do_Not_Email" type="hidden" value="##Do_Not_Email##" />
+                </form>
+           </div>
+        </div>
+        <div class="row" id="footer-row">
+            <div class="col">
+                <p class="gv-copy">LOTH 3574 E. Kemper Road, Cincinnati, OH 45241&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/Lothinc"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/loth/"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/LOTHinc"><i class="fab fa-twitter-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.pinterest.com/LOTHInc/"><i class="fab fa-pinterest-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/loth_inc/"><i class="fab fa-instagram"></i></a></p>
+            </div>
+        </div>
+        </div>
+      
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var unsubBox = document.getElementById("chkStrength").checked;
+    
+	$("#unsubme").click(function(evt){
+        evt.preventDefault();
+        unsubBox = document.getElementById("chkStrength").checked;
+        
+        
+        if(unsubBox){
+            document.getElementById('Do_Not_Email').value = "true";
+                 //$("#unsub-form").submit();
+                console.log("submitting!");
+           }
+           else{
+                 $("#u-sure").css({"display":"block"});
+               
+           }
+    });
+    
+    $("#chkStrength").change(function(){
+        unsubBox = document.getElementById("chkStrength").checked;
+        if(unsubBox){
+            $("#u-sure").css({"display":"none"});
+        }
+        
+    });
+});
+    
+</script>
+</body>
+</html>
