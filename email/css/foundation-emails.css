@@ -1367,6 +1367,10 @@ table.container.body-bg{
     background-color: #353131;
 }
 
+table.container.rem-body-bg{
+  background-color:#fff;
+}
+
 /*.body-copy{
     height:407px;
 }*/
@@ -1400,4 +1404,13 @@ table.copy-wrapper td.deets{
 }
 table.copy-wrapper td.deets.addr{
     font-size:32px;
+}
+
+.rem-cont-td-cell{
+  padding:0 16px;
+}
+
+.rem-body-copy p.rem-copy{
+  font-size:18px;
+  line-height:1.4em;
 }
