@@ -19,11 +19,11 @@ $(document).ready(function(){
     var going = document.getElementById("going").value;
     var msg;
     if(going === "yes"){
-       msg = "Excellent! We'll see you there.";
+       msg = "Woohoo! We are so excited to see you, and we can’t wait for the Kick-Off (You’re going to love it!)";
         $(".message p").html(msg);
        }
     if(going === "no"){
-        msg = "We're sorry you won't be able to make it to the the 2019 Kick-Off. We hope you see you at our next big event.";
+        msg = "We are sad you will not be able to make it to the 2019 Kick-Off meeting.<br><br>I'm sure you will be hearing about its greatness for a long time!";
         $(".message p").html(msg);
     }
     
