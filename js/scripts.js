@@ -16,16 +16,16 @@ $(document).ready(function(){
         $("#rsvp-form").submit();
     });
     
-    var going = document.getElementById("going").value;
-    var msg;
-    if(going === "yes"){
+    //var going = document.getElementById("going").value;
+    //var msg;
+    /*if(going === "yes"){
        msg = "Woohoo! We are so excited to see you, and we can’t wait for the Kick-Off (You’re going to love it!)";
         $(".message p").html(msg);
        }
     if(going === "no"){
         msg = "We are sad you will not be able to make it to the 2019 Kick-Off meeting.<br><br>I'm sure you will be hearing about its greatness for a long time!";
         $(".message p").html(msg);
-    }
+    }*/
     
-    console.log(msg);
+    //console.log(msg);
 });

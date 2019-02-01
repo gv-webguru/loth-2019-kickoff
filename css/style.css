@@ -31,7 +31,8 @@ body {
   color: #f8931d;
   font-size: 2em; }
 .body-row .rsvp-btn {
-  font-size: 2em; }
+  font-size: 2em;
+  font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
 
 @media screen and (max-width: 991px) {
   .header-row h1 {
@@ -59,6 +60,9 @@ body {
   .header-row h1 {
     font-size: 2em; } }
 /* CSS Document */
+body {
+  background-color: #555; }
+
 .header-row {
   background-image: url(https://mymulti-craft.com/loth/2019-kickoff/images/headerBg.jpg);
   background-repeat: no-repeat;
