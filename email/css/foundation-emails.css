@@ -1414,3 +1414,33 @@ table.copy-wrapper td.deets.addr{
   font-size:18px;
   line-height:1.4em;
 }
+
+table.time-table{
+  border: #bbb 1px solid;
+  padding:4px;
+}
+
+table.time-table tr.head-row th{
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+
+/*table.time-table tr{
+  border-bottom:2px solid #bbb;
+}*/
+
+table.time-table th, table.time-table td{
+  padding-left:4px;
+  padding-top:8px;
+  padding-right:4px;
+  padding-bottom:4px;
+}
+
+table.time-table tr.light{
+  background-color:#eee;
+}
+
+table.time-table tr.dark{
+  background-color:#bbb;
+}
+
