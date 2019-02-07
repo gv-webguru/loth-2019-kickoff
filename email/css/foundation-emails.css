@@ -1415,13 +1415,18 @@ table.copy-wrapper td.deets.addr{
   line-height:1.4em;
 }
 
+th.rem-body-copy p.time-range{
+  font-weight:bold;
+  font-size:1.25em;
+}
+
 table.time-table{
-  border: #bbb 1px solid;
+  /*border: #bbb 1px solid;*/
   padding:4px;
 }
 
 table.time-table tr.head-row th{
-  text-decoration: underline;
+  font-weight: bold;
   font-size: 1.3em;
 }
 
@@ -1431,16 +1436,28 @@ table.time-table tr.head-row th{
 
 table.time-table th, table.time-table td{
   padding-left:4px;
-  padding-top:8px;
+  padding-top: 12px;
   padding-right:4px;
-  padding-bottom:4px;
+  padding-bottom:8px;
 }
 
-table.time-table tr.light{
-  background-color:#eee;
+table.time-table th, table.time-table td.space-cell{
+  padding:0;
 }
 
-table.time-table tr.dark{
-  background-color:#bbb;
+table.time-table tr.boa{
+  background-color:#fbab3b;
 }
 
+table.time-table tr.bob{
+  background-color:#514290;
+  color:#fff;
+}
+
+table.time-table tr.bob td{
+  color:#fff;
+}
+
+table.time-table tr.boc{
+  background-color: #199747;
+}

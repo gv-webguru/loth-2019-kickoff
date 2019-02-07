@@ -34,6 +34,30 @@ body {
   font-size: 2em;
   font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
 
+.container.pes .instructions p {
+  font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  font-size: 2.6em; }
+.container.pes .form-wrapper p {
+  color: #f8931d;
+  font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
+.container.pes .form-wrapper .breakout-wrapper {
+  font-size: 1.5em; }
+  .container.pes .form-wrapper .breakout-wrapper label.rate-lab {
+    font-size: .8em;
+    font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
+  .container.pes .form-wrapper .breakout-wrapper p.session-title {
+    font-size: 1.5em;
+    font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
+  .container.pes .form-wrapper .breakout-wrapper p.session-q {
+    font-weight: bold;
+    font-size: 1.25em;
+    font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
+  .container.pes .form-wrapper .breakout-wrapper p.session-q.open-area {
+    font-size: 1em; }
+.container.pes .feedback-btn {
+  font-size: 2em;
+  font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
+
 @media screen and (max-width: 991px) {
   .header-row h1 {
     font-size: 3.5em; } }
@@ -58,7 +82,24 @@ body {
     font-size: 1.25em; }
 
   .header-row h1 {
-    font-size: 2em; } }
+    font-size: 2em; }
+
+  .container.pes .body-row .instructions p, .container.pes .body-row .message p {
+    font-size: 1.5em; }
+  .container.pes .body-row .form-wrapper .breakout-wrapper {
+    font-size: 1.5em; }
+    .container.pes .body-row .form-wrapper .breakout-wrapper label.rate-lab {
+      font-size: 1em;
+      font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
+    .container.pes .body-row .form-wrapper .breakout-wrapper p.session-title {
+      font-size: 1.25em;
+      font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
+    .container.pes .body-row .form-wrapper .breakout-wrapper p.session-q {
+      font-weight: bold;
+      font-size: 1em;
+      font-family: Agency, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; }
+    .container.pes .body-row .form-wrapper .breakout-wrapper p.session-q.open-area {
+      font-size: 1em; } }
 /* CSS Document */
 body {
   background-color: #555; }
@@ -101,15 +142,19 @@ body {
   display: flex;
   align-items: stretch; }
 
-.rsvp-btn {
+.feedback-btn {
+  width: 80%;
+  margin: 0 auto; }
+
+.rsvp-btn, .feedback-btn {
   padding: 16px;
   box-shadow: 0px -15px 30px rgba(0, 0, 0, 0.15) inset;
   margin: 32px auto; }
 
-.rsvp-btn:hover {
+.rsvp-btn:hover, .feedback-btn:hover {
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15) inset; }
 
-.rsvp-btn#yes {
+.rsvp-btn#yes, .feedback-btn {
   background-color: #f8931d; }
 
 .rsvp-btn#no {
@@ -131,8 +176,56 @@ body {
   .logo-wrapper img {
     width: 100%; }
 
+.container.pes .breakout-wrapper {
+  width: 95%;
+  margin: 16px auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 16px; }
+  .container.pes .breakout-wrapper hr {
+    color: #f8931d;
+    border-color: #f8931d;
+    width: 75%;
+    margin: 10px auto; }
+  .container.pes .breakout-wrapper textarea {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5) inset;
+    height: 150px;
+    background-color: rgba(192, 192, 192, 0.85); }
+
 @media screen and (max-width: 991px) {
   .logo-wrapper {
-    margin-bottom: 24px; } }
+    margin-bottom: 24px; }
+
+  .form-wrapper {
+    width: 100%; }
+
+  .container.pes .breakout-wrapper {
+    width: 90%;
+            /*margin:16px auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 24px rgba(0,0,0,.25);
+            background-color: rgba(128,128,128,.5);
+            padding:16px;
+            hr{
+                color:$orange;
+                border-color: $orange;
+                width:75%;
+                margin:10px auto;
+            }
+            textarea{
+                width:100%;
+                border:none;
+                border-radius:8px;
+                overflow: hidden;
+                box-shadow: 0 0px 8px rgba(0,0,0,.5) inset;
+                height:150px;
+                background-color:rgba(192,192,192,.85);
+
+            }*/ } }
 
 /*# sourceMappingURL=style.css.map */

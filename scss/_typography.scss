@@ -60,6 +60,42 @@ body{
 
 }
 
+.container.pes{
+    .instructions p{
+        font-family: $deetsFace;
+        font-size:2.6em;
+    }
+    
+    .form-wrapper p{
+        color:$orange;
+        font-family: $deetsFace;
+            
+    }
+    .form-wrapper .breakout-wrapper{
+                font-size:1.5em;
+                label.rate-lab{
+                    font-size:.8em;
+                    font-family: $deetsFace;
+                }
+        p.session-title{
+            font-size:1.5em;
+            font-family: $deetsFace;
+        }
+        p.session-q{
+            font-weight: bold;
+            font-size:1.25em;
+            font-family: $deetsFace;
+        }
+        p.session-q.open-area{
+            font-size:1em;
+        }
+    }
+    .feedback-btn{
+            font-size: 2em;
+            font-family: $deetsFace;
+    }
+}
+
 @media screen and (max-width:991px){
     .header-row{
         
@@ -121,6 +157,36 @@ body{
                 font-size:2em;
             }
        
+    }
+    
+    .container.pes{
+        .body-row{
+            .instructions, .message{
+                p{
+                    font-size:1.5em;
+                }
+            }
+            
+            .form-wrapper .breakout-wrapper{
+                font-size:1.5em;
+                label.rate-lab{
+                    font-size:1em;
+                    font-family: $deetsFace;
+                }
+                p.session-title{
+                    font-size:1.25em;
+                    font-family: $deetsFace;
+                }
+                p.session-q{
+                    font-weight: bold;
+                    font-size:1em;
+                    font-family: $deetsFace;
+                }
+                p.session-q.open-area{
+                    font-size:1em;
+                }
+            }
+        }
     }
     
     

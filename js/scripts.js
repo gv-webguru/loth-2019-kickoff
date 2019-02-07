@@ -16,6 +16,12 @@ $(document).ready(function(){
         $("#rsvp-form").submit();
     });
     
+    $("#feedback-submit").click(function(evt){
+        evt.preventDefault();
+        console.log("Providing feedback, Yee Haw!");
+        $("#feedback-form").submit();
+    });
+    
     //var going = document.getElementById("going").value;
     //var msg;
     /*if(going === "yes"){
